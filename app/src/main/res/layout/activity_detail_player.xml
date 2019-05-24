@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetailPlayerActivity">
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+            >
+
+
+                <ImageView
+                        android:id="@+id/imgFanArtPlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:id="@+id/imgDetailPlayer"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="100dp"
+                            tools:src="@drawable/ic_launcher_background"
+                            android:layout_height="100dp"/>
+                    <TextView
+                            android:layout_toEndOf="@+id/imgDetailPlayer"
+                            android:id="@+id/tvDetailNamePlayer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:textSize="18sp"
+                            tools:text="Aron Ramsey"
+                            android:textStyle="bold"
+                    />
+
+                    <TextView
+                            android:id="@+id/tvDetailNationPlayer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Wales"
+                            android:layout_toEndOf="@id/imgDetailPlayer"
+                            android:layout_below="@id/tvDetailNamePlayer"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"
+                    />
+
+                </RelativeLayout>
+                <TextView
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvDetailDescPlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                />
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

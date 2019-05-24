@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context=".detailLeagueFragment.StandingsFragment">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Team"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:text="Played"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:text="Goals"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:text="Win"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:text="Draw"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:text="Lose"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:text="Point"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcStandings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+</LinearLayout>
